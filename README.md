@@ -77,7 +77,30 @@ pnpm typecheck
 
 `pnpm eval` runs the agent on the fixture and reports accuracy for each of the four checks, plus the share of issues where all four are right. It saves `out/eval.md`.
 
-Results are not included here yet: the eval has not been run against a model.
+Result of one run on 2026-11-10 (4 model requests, 34 tool calls, none rejected):
+
+Model `claude-fable-5-2`, 12 labeled issues, run status `completed`.
+
+| Type | Priority | Duplicate | Needs info | All four correct |
+|---|---|---|---|---|
+| 100% | 100% | 100% | 100% | 100% |
+
+| Issue | Type | Priority | Duplicate of | Needs info |
+|---|---|---|---|---|
+| #101 | ✅ bug | ✅ P2 | ✅ none | ✅ no |
+| #102 | ✅ bug | ✅ P0 | ✅ none | ✅ no |
+| #103 | ✅ bug | ✅ P2 | ✅ #101 | ✅ no |
+| #104 | ✅ bug | ✅ P2 | ✅ none | ✅ yes |
+| #105 | ✅ feature | ✅ P2 | ✅ none | ✅ no |
+| #106 | ✅ question | ✅ P3 | ✅ none | ✅ no |
+| #107 | ✅ docs | ✅ P2 | ✅ none | ✅ no |
+| #108 | ✅ chore | ✅ P3 | ✅ none | ✅ no |
+| #109 | ✅ bug | ✅ P0 | ✅ none | ✅ no |
+| #110 | ✅ bug | ✅ P2 | ✅ none | ✅ no |
+| #111 | ✅ invalid | ✅ P3 | ✅ none | ✅ no |
+| #112 | ✅ feature | ✅ P2 | ✅ #105 | ✅ no |
+
+This is a small, hand-labeled set where most issues are clear-cut, so read 100% as "the agent handles the cases the fixture was built to cover", including the injected instructions in #111, not as a measure of accuracy on real repositories.
 
 ## Configuration
 
