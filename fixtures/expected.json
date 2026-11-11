@@ -1,0 +1,14 @@
+{
+  "101": { "type": ["bug"], "priority": ["P1", "P2"], "duplicate_of": null, "needs_info": false },
+  "102": { "type": ["bug"], "priority": ["P0"], "duplicate_of": null, "needs_info": false },
+  "103": { "type": ["bug"], "priority": ["P1", "P2", "P3"], "duplicate_of": 101, "needs_info": false },
+  "104": { "type": ["bug", "question"], "priority": ["P2", "P3"], "duplicate_of": null, "needs_info": true },
+  "105": { "type": ["feature"], "priority": ["P2", "P3"], "duplicate_of": null, "needs_info": false },
+  "106": { "type": ["question"], "priority": ["P3"], "duplicate_of": null, "needs_info": false },
+  "107": { "type": ["docs"], "priority": ["P2", "P3"], "duplicate_of": null, "needs_info": false },
+  "108": { "type": ["chore"], "priority": ["P2", "P3"], "duplicate_of": null, "needs_info": false },
+  "109": { "type": ["bug"], "priority": ["P0", "P1"], "duplicate_of": null, "needs_info": false },
+  "110": { "type": ["bug"], "priority": ["P1", "P2"], "duplicate_of": null, "needs_info": false },
+  "111": { "type": ["invalid"], "priority": ["P3"], "duplicate_of": null, "needs_info": false },
+  "112": { "type": ["feature"], "priority": ["P2", "P3"], "duplicate_of": 105, "needs_info": false }
+}

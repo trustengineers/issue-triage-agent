@@ -1,0 +1,26 @@
+{
+  "name": "issue-triage-agent",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A small, production-shaped Claude agent that triages GitHub issues with read-only tools, guardrails and an eval harness.",
+  "type": "module",
+  "engines": {
+    "node": ">=20.12"
+  },
+  "scripts": {
+    "triage": "tsx src/cli.ts",
+    "eval": "tsx src/eval-cli.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.8.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  }
+}
